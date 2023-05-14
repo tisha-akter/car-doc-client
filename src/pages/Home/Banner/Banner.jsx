@@ -17,7 +17,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-primary mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 mr-5">Discover More</button>
                             <button className="btn btn-outline btn-secondary">Latest Project</button>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-primary mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 mr-5">Discover More</button>
                             <button className="btn btn-outline btn-secondary">Latest Project</button>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-primary mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 mr-5">Discover More</button>
                             <button className="btn btn-outline btn-secondary">Latest Project</button>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-primary mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 mr-5">Discover More</button>
                             <button className="btn btn-outline btn-secondary">Latest Project</button>
                         </div>
                     </div>
