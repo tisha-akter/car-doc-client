@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg';
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
@@ -7,6 +7,7 @@ const Login = () => {
 
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
+    const navigate = useNavigate();
 
     const from = location.state?.from?.pathname || '/'
 
@@ -21,6 +22,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(from, {replace: true})
             })
             .catch(error => console.log(error));
 
@@ -46,7 +48,7 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" name='password' placeholder="password" className="input input-bordered" />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
