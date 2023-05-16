@@ -28,7 +28,7 @@ const CheckOut = () => {
 
         console.log(order);
 
-        fetch('http://localhost:5000/checkOuts', {
+        fetch('https://car-doctor-server-liart-theta.vercel.app/checkOuts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

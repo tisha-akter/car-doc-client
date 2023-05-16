@@ -9,7 +9,7 @@ const Bookings = () => {
     const [bookings, setBookings] = useState([]);
     const navigate = useNavigate();
 
-    const url = `http://localhost:5000/checkOuts?email=${user?.email}`;
+    const url = `https://car-doctor-server-liart-theta.vercel.app/checkOuts?email=${user?.email}`;
     useEffect(() => {
         fetch(url, {
             method: 'GET',
@@ -35,7 +35,7 @@ const Bookings = () => {
     const handleDelete = id => {
         const proceed = confirm('Are you sure you want to delete?')
         if (proceed) {
-            fetch(`http://localhost:5000/checkOuts/${id}`, {
+            fetch(`https://car-doctor-server-liart-theta.vercel.app/checkOuts/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -54,7 +54,7 @@ const Bookings = () => {
     const handleBookingConfirm = id => {
         const proceed = confirm('Are you sure you want to confirm?')
         if (proceed) {
-            fetch(`http://localhost:5000/checkOuts/${id}`, {
+            fetch(`https://car-doctor-server-liart-theta.vercel.app/checkOuts/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
